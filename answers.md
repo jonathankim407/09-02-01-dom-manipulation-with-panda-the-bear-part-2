@@ -90,3 +90,9 @@ Adding Elements to the DOM
 portfolio = document.querySelector('.portfolio-container')
 pikachu = document.querySelector('#right-image.portfolio-image img')
 portfolio.appendChild(pikachu.cloneNode())
+
+2. Wow, that was so satisfying I think we should do it 10 more times. Use a for loop to help you do this.
+
+portfolio = document.querySelector('.portfolio-container')
+pikachu = document.querySelector('#right-image.portfolio-image img')
+for (i = 0; i < 10; i++) {portfolio.appendChild(pikachu.cloneNode())}
