@@ -96,3 +96,16 @@ portfolio.appendChild(pikachu.cloneNode())
 portfolio = document.querySelector('.portfolio-container')
 pikachu = document.querySelector('#right-image.portfolio-image img')
 for (i = 0; i < 10; i++) {portfolio.appendChild(pikachu.cloneNode())}
+
+3. Let’s add a message about when the page was last updated. We'll do this by appending a new <li> element to the <ul> in the sidebar (you might need to refresh the page to bring back the list items that we emptied out earlier).
+
+var listItem = document.createElement('li')
+var leftSpan = document.createElement('span')
+leftSpan.innerText = 'Page last updated on'
+bioInfo = document.querySelector('.bio-info')
+bioInfo.appendChild(listItem)
+listItem.appendChild(leftSpan)
+lastUpdate = document.lastModified
+var rightSpan = document.createElement('span')
+rightSpan.innerText = lastUpdate
+listItem.appendChild(rightSpan)
