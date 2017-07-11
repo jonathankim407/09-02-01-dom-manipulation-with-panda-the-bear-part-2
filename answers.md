@@ -74,3 +74,12 @@ submitButton.disabled = true
 
 privacy = document.querySelector('form')
 privacy.reset()
+
+PART 2
+
+Removing Elements from the DOM
+1. Panda the Bear is lying about their skills! Take the "time travel" skill off the page to satisfy your personal sense of justice. We'll remove it by accessing the parentElement of the Panda skill and using remove().
+
+skills = document.querySelectorAll('.bar-default')[2]
+timeTravel = document.querySelector('#time-travel')
+skills.removeChild(timeTravel)
