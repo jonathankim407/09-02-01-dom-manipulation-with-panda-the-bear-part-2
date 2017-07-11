@@ -83,3 +83,10 @@ Removing Elements from the DOM
 skills = document.querySelectorAll('.bar-default')[2]
 timeTravel = document.querySelector('#time-travel')
 skills.removeChild(timeTravel)
+
+Adding Elements to the DOM
+1. That drawing of Pikachu is really cute. Let’s duplicate it using cloneNode() and insert it at the bottom of the .portfolio-container using insertAdjacentHTML() or appendChild().
+
+portfolio = document.querySelector('.portfolio-container')
+pikachu = document.querySelector('#right-image.portfolio-image img')
+portfolio.appendChild(pikachu.cloneNode())
